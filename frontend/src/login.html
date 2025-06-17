@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>تسجيل الدخول | AthenaMind</title>
-  <link rel="stylesheet" href="../styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
   <style>
     .login-container {
       background: #232345;
       padding: 32px 24px;
       border-radius: 16px;
       width: 320px;
-      margin: 80px auto;
+      margin: 80px auto 0 auto;
       box-shadow: 0 4px 24px #0002;
+      text-align: right;
     }
     .login-container h2 {
       color: #28d9cc;
       margin-bottom: 22px;
+      font-size: 2em;
+      text-align: center;
     }
     .login-container label {
       display: block;
-      text-align: right;
       margin-bottom: 6px;
       margin-top: 16px;
       color: #fff;
+      font-size: 1.05em;
     }
     .login-container input {
       width: 100%;
@@ -30,6 +34,11 @@
       border: none;
       border-radius: 6px;
       margin-bottom: 8px;
+      font-size: 1em;
+      background: #1a1a2a;
+      color: #fff;
+      box-sizing: border-box;
+      direction: ltr;
     }
     .login-container button {
       background: #28d9cc;
@@ -52,6 +61,14 @@
       font-size: 0.97em;
       margin: 6px 0;
       text-align: right;
+      min-height: 22px;
+    }
+    @media (max-width: 600px) {
+      .login-container {
+        width: 98vw;
+        margin-top: 34px;
+        padding: 20px 4vw;
+      }
     }
   </style>
 </head>
@@ -80,8 +97,7 @@
         err.textContent = "يرجى إدخال جميع الحقول.";
         return;
       }
-      // لاحقًا: هنا تربط الصفحة بالباك-إند للتحقق الفعلي
-      // الآن فقط مثال بسيط:
+      // تحقق تجريبي (لاحقاً ربط مع الباك-إند)
       if (username === "admin" && password === "1234") {
         window.location.href = "index.html";
       } else {
