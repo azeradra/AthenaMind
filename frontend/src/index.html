@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AthenaMind — منصة ذكاء اقتصادي كوني</title>
+  <!-- إذا كان لديك ملف CSS خارجي يمكنك الربط به هنا -->
   <link href="styles/main.css" rel="stylesheet">
   <style>
     body {
@@ -37,7 +38,7 @@
     ul, ol {
       margin-right: 2em;
     }
-    .features, .structure, .team, .license {
+    .features, .structure, .about, .team, .license {
       background: #fff;
       margin: 2em auto;
       max-width: 700px;
@@ -55,16 +56,33 @@
       padding: 1em;
       border-radius: 1em;
       margin-bottom: 1.5em;
-      direction:ltr;
-      text-align:left;
+      direction: ltr;
+      text-align: left;
     }
     @media (max-width: 600px) {
-      .features, .structure, .team, .license {
+      .features, .structure, .about, .team, .license {
         padding: 1em 0.5em;
       }
       header {
         padding: 1.5rem 0.5rem 1rem 0.5rem;
       }
+    }
+    a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .en {
+      direction: ltr;
+      text-align: left;
+      font-family: monospace;
+      color: #444;
+      background: #f6f8fa;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin: 10px 0;
     }
   </style>
 </head>
@@ -98,7 +116,7 @@ frontend/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.css<br>
 README.md
     </div>
-    <p><b>⚡️ كيف تبدأ</b></p>
+    <p><b>⚡️ كيف تبدأ:</b></p>
     <ol>
       <li>افتح <code>frontend/src/index.html</code> في متصفحك لرؤية الواجهة.</li>
       <li>يمكنك تطوير واجهات أو خصائص إضافية حسب الحاجة.</li>
