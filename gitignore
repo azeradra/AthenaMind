@@ -1,1 +1,37 @@
+# نظام الملفات
+.DS_Store
+Thumbs.db
 
+# تحرير النصوص الشهيرة
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (لو أضفت باك-إند لاحقًا)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+
+# تصدير التكوينات السرية
+.env
+.env.*
+
+# ملفات البناء المؤقتة
+dist/
+build/
+*.log
+
+# أخرى
+*.swp
