@@ -1,94 +1,127 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>AthenaMind</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AthenaMind — منصة ذكاء اقتصادي كوني</title>
+  <link href="styles/main.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #181828;
-      color: #fff;
-      text-align: center;
+      font-family: 'Cairo', Arial, sans-serif;
+      background: #f4f7fa;
       margin: 0;
-      padding: 0;
-      min-height: 100vh;
+      color: #222;
+      direction: rtl;
     }
-    .logo {
-      margin: 40px auto 18px auto;
-      display: block;
-      width: 160px;
-      max-width: 60vw;
+    header {
+      background: #2d3e50;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-radius: 0 0 2rem 2rem;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 1rem;
     }
     h1 {
-      color: #28d9cc;
-      margin-top: 0;
-      font-size: 2.4em;
+      margin: 0.2em 0 0.6em 0;
+      font-size: 2.3em;
+      letter-spacing: 1px;
     }
-    .desc {
-      font-size: 1.25em;
-      margin-bottom: 30px;
-      color: #e0e0e0;
+    h2 {
+      color: #2d3e50;
+      margin-top: 2em;
+      margin-bottom: 1em;
     }
-    .main-actions {
-      margin: 38px auto 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      max-width: 320px;
-      align-items: center;
+    ul, ol {
+      margin-right: 2em;
     }
-    .main-actions a {
-      display: inline-block;
-      width: 100%;
-      max-width: 280px;
-      background: #28d9cc;
-      color: #181828;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.18em;
-      padding: 14px 0;
-      transition: background 0.2s;
-      box-shadow: 0 2px 12px #28d9cc22;
-      letter-spacing: 0.02em;
+    .features, .structure, .team, .license {
+      background: #fff;
+      margin: 2em auto;
+      max-width: 700px;
+      padding: 1.5em 2em;
+      border-radius: 1.5em;
+      box-shadow: 0 4px 10px #0001;
     }
-    .main-actions a:hover {
-      background: #1bb8ac;
+    .logo {
+      width: 64px;
+      vertical-align: middle;
     }
-    .footer {
-      margin-top: 60px;
-      color: #bbb;
-      font-size: 0.99em;
-      letter-spacing: 0.01em;
-      opacity: 0.7;
+    .project-structure {
+      font-family: monospace;
+      background: #f0f3f6;
+      padding: 1em;
+      border-radius: 1em;
+      margin-bottom: 1.5em;
+      direction:ltr;
+      text-align:left;
     }
     @media (max-width: 600px) {
-      .logo { margin-top: 25px; width: 110px; }
-      h1 { font-size: 1.4em; }
-      .desc { font-size: 1em; }
-      .main-actions { max-width: 95vw; }
-      .main-actions a { font-size: 0.97em; padding: 12px 0; }
+      .features, .structure, .team, .license {
+        padding: 1em 0.5em;
+      }
+      header {
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="../public/logo.svg" alt="AthenaMind Logo" class="logo" />
-  <h1>أهلاً بك في AthenaMind</h1>
-  <div class="desc">
-    منصة ذكاء اقتصادي كوني<br>
-    تحليل الأسواق، التنبؤات، والوكلاء الذكيين في مكان واحد.
-  </div>
+  <header>
+    <img src="../public/logo.svg" alt="AthenaMind Logo" class="logo">
+    <h1>AthenaMind</h1>
+    <p>منصة ذكاء اقتصادي كوني</p>
+    <p>تحليل الأسواق، التنبؤات، الأمان، والوكلاء الذكيين في نظام واحد موثوق ومرن.</p>
+  </header>
 
-  <div class="main-actions">
-    <a href="login.html">تسجيل الدخول</a>
-    <a href="https://github.com/azeradra/AthenaMind" target="_blank" rel="noopener">عرض المشروع على GitHub</a>
-  </div>
+  <section class="features">
+    <h2>🚀 المميزات</h2>
+    <ul>
+      <li>واجهة عصرية مبنية بـ <b>HTML</b> و <b>CSS</b></li>
+      <li>بنية مرنة وقابلة للتوسعة</li>
+      <li>شعار وهوية بصرية حديثة ومميزة</li>
+      <li>يدعم العربية والإنجليزية</li>
+    </ul>
+  </section>
 
-  <div class="footer">
-    © 2025 AthenaMind<br>
-    <a href="https://github.com/azeradra/AthenaMind/blob/main/LICENSE" target="_blank" style="color:#28d9cc;text-decoration:underline;">MIT License</a>
-  </div>
+  <section class="structure">
+    <h2>🗂️ هيكلية المشروع</h2>
+    <div class="project-structure">
+frontend/<br>
+&nbsp;&nbsp;public/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;logo.svg<br>
+&nbsp;&nbsp;src/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;index.html<br>
+&nbsp;&nbsp;&nbsp;&nbsp;styles/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.css<br>
+README.md
+    </div>
+    <p><b>⚡️ كيف تبدأ</b></p>
+    <ol>
+      <li>افتح <code>frontend/src/index.html</code> في متصفحك لرؤية الواجهة.</li>
+      <li>يمكنك تطوير واجهات أو خصائص إضافية حسب الحاجة.</li>
+    </ol>
+  </section>
+
+  <section class="about">
+    <h2>📌 عن المشروع</h2>
+    <p>
+      AthenaMind هو مشروع مفتوح المصدر يهدف لتقديم منصة ذكاء اقتصادي كوني تجمع بين التحليلات المتقدمة، إدارة المخاطر، والوكلاء الذكيين في بيئة آمنة وموثوقة.
+    </p>
+  </section>
+
+  <section class="team">
+    <h2>🧑‍💻 فريق العمل</h2>
+    <ul>
+      <li><b>azeradra</b> — Founder & Lead</li>
+    </ul>
+  </section>
+
+  <section class="license">
+    <h2>📃 الرخصة</h2>
+    <p>هذا المشروع مفتوح المصدر يمكنك استخدامه أو تعديله حسب <b>MIT License</b>.</p>
+  </section>
 </body>
 </html>
