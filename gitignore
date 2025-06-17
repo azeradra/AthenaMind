@@ -1,20 +1,20 @@
-# نظام الملفات
+# نظام الملفات لأنظمة التشغيل
 .DS_Store
 Thumbs.db
 
-# تحرير النصوص الشهيرة
+# إعدادات برامج التحرير الشائعة
 .vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
 
-# Node.js
+# Node.js (إذا تم استخدامه لاحقًا)
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Python (لو أضفت باك-إند لاحقًا)
+# Python (للتوسعة المستقبلية)
 __pycache__/
 *.py[cod]
 *.pyo
@@ -24,7 +24,7 @@ venv/
 ENV/
 .venv/
 
-# تصدير التكوينات السرية
+# ملفات التكوين والبيئة
 .env
 .env.*
 
